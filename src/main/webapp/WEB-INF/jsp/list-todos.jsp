@@ -3,19 +3,19 @@
 
 <div class="container">
     <div>
-        <a type="button" class="btn btn-primary btn-md" href="/add-todo">Añadir tarea</a>
+        <a type="button" class="btn btn-primary btn-md" href="/add-todo">Add Task</a>
     </div>
     <br>
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h3>Lista de tareas</h3>
+            <h3>Task List</h3>
         </div>
         <div class="panel-body">
             <table class="table table-striped">
                 <thead>
                 <tr>
-                    <th width="40%">Descripción</th>
-                    <th width="40%">Fecha objetivo</th>
+                    <th width="40%">Description</th>
+                    <th width="40%">Target Date</th>
                     <th width="20%"></th>
                 </tr>
                 </thead>
@@ -26,9 +26,9 @@
                         <td><fmt:formatDate value="${todo.targetDate}"
                                             pattern="dd/MM/yyyy" /></td>
                         <td><a type="button" class="btn btn-success"
-                               href="/update-todo?id=${todo.id}">Editar</a>
+                               href="/update-todo?id=${todo.id}">Edit</a>
                             <a type="button" class="btn btn-warning"
-                               href="/delete-todo?id=${todo.id}">Borrar</a></td>
+                               href="/delete-todo?id=${todo.id}">Delete</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>
